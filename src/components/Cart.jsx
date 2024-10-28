@@ -126,12 +126,23 @@ function Cart() {
                       </div>
                     </div>
 
+
                     <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                       <p>
                         <strong>Camiseta Roja</strong>
                       </p>
                       <p>Color: rojo</p>
                       <p>Talla: M</p>
+            
+            <div class="row">
+              <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                
+                <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                    <div class="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}></div>
+                </div>
+                
+              </div>
+
 
                       <button
                         type="button"

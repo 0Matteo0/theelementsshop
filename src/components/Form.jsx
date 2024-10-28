@@ -3,6 +3,7 @@ import { alignPropType } from "react-bootstrap/esm/types";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+
 function Form() {
   const [formRegister, setFormRegister] = useState({});
 
@@ -174,7 +175,17 @@ function Form() {
                         </div>
                       </form>
                     </div>
+
                     <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"></div>
+
+                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                      {/* <img
+                        src={} 
+                        class="img-fluid"
+                        alt="Sample"
+                      /> */}
+                    </div>
+
                   </div>
                 </div>
               </div>
