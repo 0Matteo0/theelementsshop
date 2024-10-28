@@ -65,8 +65,16 @@ const App = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/registro">
                 --Registrarse
+              </a>
+            </li>
+            <li class="nav-item">
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/registrotrabajador">
+                --Registrarse como vendedor
               </a>
             </li>
             <li class="nav-item">
