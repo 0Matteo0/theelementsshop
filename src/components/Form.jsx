@@ -1,6 +1,5 @@
 import React from "react";
-import Logo from '../images/Logo.png'
-import { alignPropType } from "react-bootstrap/esm/types";
+
 
 
 function Form() {
@@ -120,11 +119,11 @@ function Form() {
                       </form>
                     </div>
                     <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                      <img
-                        src={Logo} 
+                      {/* <img
+                        src={} 
                         class="img-fluid"
                         alt="Sample"
-                      />
+                      /> */}
                     </div>
                   </div>
                 </div>
