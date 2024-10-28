@@ -76,11 +76,7 @@ function Cart() {
               <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                 
                 <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
-                    class="w-100" />
-                  <a href="#!">
                     <div class="mask" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}}></div>
-                  </a>
                 </div>
                 
               </div>
