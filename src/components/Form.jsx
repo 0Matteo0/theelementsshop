@@ -1,9 +1,29 @@
-import React from "react";
-import Logo from '../images/Logo.png'
+import React, { useState } from "react";
 import { alignPropType } from "react-bootstrap/esm/types";
-
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Form() {
+  const [formRegister, setFormRegister] = useState({});
+
+  const peticionPost = async () => {
+    console.log(formRegister)
+    await axios
+      .post("http://localhost:4001/api/clientes", formRegister)
+      .then((response) => {
+        alert(`Bienvenido`);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+  const handleChange = async (e) => {
+    await setFormRegister({
+        ...formRegister,
+        [e.target.name]: e.target.value,
+      });
+  };
+
   return (
     <div className="Form">
       <section class="vh-100" style={{ backgroundColor: "#eee" }}>
@@ -15,9 +35,7 @@ function Form() {
                   <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                       <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
-                        The Elements Shop
-
-                        Registrate Ahora
+                        The Elements Shop Registrate Ahora
                       </p>
 
                       <form class="mx-1 mx-md-4">
@@ -32,12 +50,37 @@ function Form() {
                               type="text"
                               id="form3Example1c"
                               class="form-control"
+                              name="nombre"
+                              onChange={handleChange}
                             />
-                            <label class="form-label" for="form3Example1c">
-                            
-                            </label>
+                            <label
+                              class="form-label"
+                              for="form3Example1c"
+                            ></label>
                           </div>
                         </div>
+
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                          <div
+                            data-mdb-input-init
+                            class="form-outline flex-fill mb-0"
+                          >
+                            Apellido
+                            <input
+                              type="text"
+                              id="form3Example4c"
+                              class="form-control"
+                              name="apellido"
+                              onChange={handleChange}
+                            />
+                            <label
+                              class="form-label"
+                              for="form3Example4c"
+                            ></label>
+                          </div>
+                        </div>
+
 
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
@@ -50,12 +93,16 @@ function Form() {
                               type="email"
                               id="form3Example3c"
                               class="form-control"
+                              name="correo_electronico"
+                              onChange={handleChange}
                             />
-                            <label class="form-label" for="form3Example3c">
-                              
-                            </label>
+                            <label
+                              class="form-label"
+                              for="form3Example3c"
+                            ></label>
                           </div>
                         </div>
+
 
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
@@ -68,10 +115,13 @@ function Form() {
                               type="password"
                               id="form3Example4c"
                               class="form-control"
+                              name="contraseña"
+                              onChange={handleChange}
                             />
-                            <label class="form-label" for="form3Example4c">
-                              
-                            </label>
+                            <label
+                              class="form-label"
+                              for="form3Example4c"
+                            ></label>
                           </div>
                         </div>
 
@@ -81,11 +131,13 @@ function Form() {
                             data-mdb-input-init
                             class="form-outline flex-fill mb-0"
                           >
-                            Repite Tu Contraseña
+                            Telefono
                             <input
-                              type="password"
+                              type="text"
                               id="form3Example4cd"
                               class="form-control"
+                              name="telefono"
+                              onChange={handleChange}
                             />
                             <label class="form-label" for="form3Example4cd">
                               ¿Ya Tienes Cuenta?
@@ -102,30 +154,27 @@ function Form() {
                             id="form2Example3c"
                           />
                           <label class="form-check-label" for="form2Example3">
-                            Yo Acepto Todos los {" "}
+                            Yo Acepto Todos los{" "}
                             <a href="#!">Terminos Y Servicios</a>
                           </label>
                         </div>
 
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button
-                            type="button"
-                            data-mdb-button-init
-                            data-mdb-ripple-init
-                            class="btn btn-primary btn-lg"
-                          >
-                            Registrarse
-                          </button>
+                          <Link to="/Shophomepage">
+                            <button
+                              type="button"
+                              data-mdb-button-init
+                              data-mdb-ripple-init
+                              class="btn btn-primary btn-lg"
+                              onClick={peticionPost}
+                            >
+                              Registrarse
+                            </button>
+                          </Link>
                         </div>
                       </form>
                     </div>
-                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                      <img
-                        src={Logo} 
-                        class="img-fluid"
-                        alt="Sample"
-                      />
-                    </div>
+                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"></div>
                   </div>
                 </div>
               </div>

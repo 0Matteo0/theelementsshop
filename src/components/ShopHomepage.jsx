@@ -30,11 +30,7 @@ const ShopHomepage = () => {
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#!">
-                  About
-                </a>
-              </li>
+
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
