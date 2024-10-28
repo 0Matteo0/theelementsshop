@@ -1,56 +1,60 @@
 import React from 'react';
+import '../styles/main.css';
 
-const UserProfileCard = () => {
+const UserProfileSection = () => {
   return (
-    <div className="page-content page-container" id="page-content">
-      <div className="padding">
-        <div className="row container d-flex justify-content-center">
-          <div className="col-xl-6 col-md-12">
-            <div className="card user-card-full">
-              <div className="row m-l-0 m-r-0">
-                <div className="col-sm-4 bg-c-lite-green user-profile">
-                  <div className="card-block text-center text-white">
-                    <div className="m-b-25">
-                      <img 
-                        src="https://img.icons8.com/bubbles/100/000000/user.png" 
-                        className="img-radius" 
-                        alt="User-Profile-Image"
-                      />
-                    </div>
-                    <h6 className="f-w-600">Hembo Tingor</h6>
-                    <p>Web Designer</p>
-                    <i className="mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
-                  </div>
+    <section className="vh-100" style={{ backgroundColor: '#161413' }}>
+      <div className="container py-5 h-100">
+        <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col col-lg-6 mb-4 mb-lg-0">
+            <div className="card mb-3" style={{ borderRadius: '.5rem' }}>
+              <div className="row g-0">
+                <div 
+                  className="col-md-4 gradient-custom text-center text-red" 
+                  style={{ borderTopLeftRadius: '.5rem', borderBottomLeftRadius: '.5rem' }}
+                >
+                  <img 
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                    alt="Avatar" 
+                    className="img-fluid my-5" 
+                    style={{ width: '80px' }} 
+                  />
+                  <h5>Samuel andrade</h5>
+                  <p>Perfil</p>
+                  <i className="far fa-edit mb-5"></i>
                 </div>
-                <div className="col-sm-8">
-                  <div className="card-block">
-                    <h6 className="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
-                    <div className="row">
-                      <div className="col-sm-6">
-                        <p className="m-b-10 f-w-600">Email</p>
-                        <h6 className="text-muted f-w-400">rntng@gmail.com</h6>
+                <div className="col-md-8">
+                    <h6></h6>
+                  <div className="card-body p-4">
+                    <h6>Informacion</h6>
+                    <hr className="mt-0 mb-4" />
+                    <div className="row pt-1">
+                      <div className="col-6 mb-3">
+                        <h6>gmail</h6>
+                        <p className="text-muted">info@example.com</p>
                       </div>
-                      <div className="col-sm-6">
-                        <p className="m-b-10 f-w-600">Phone</p>
-                        <h6 className="text-muted f-w-400">98979989898</h6>
-                      </div>
-                    </div>
-                    <h6 className="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6>
-                    <div className="row">
-                      <div className="col-sm-6">
-                        <p className="m-b-10 f-w-600">Recent</p>
-                        <h6 className="text-muted f-w-400">Sam Disuja</h6>
-                      </div>
-                      <div className="col-sm-6">
-                        <p className="m-b-10 f-w-600">Most Viewed</p>
-                        <h6 className="text-muted f-w-400">Dinoter husainm</h6>
+                      <div className="col-6 mb-3">
+                        <h6>Numero telefonico</h6>
+                        <p className="text-muted">314 456 789</p>
                       </div>
                     </div>
-                    <ul className="social-link list-unstyled m-t-40 m-b-10">
-                      <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="facebook"><i className="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="twitter"><i className="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="instagram"><i className="mdi mdi-instagram feather icon-instagram instagram" aria-hidden="true"></i></a></li>
-                    </ul>
+                    <h6></h6>
+                    <hr className="mt-0 mb-4" />
+                    <div className="row pt-1">
+                      <div className="col-6 mb-3">
+                        <h6></h6>
+                        <p className="text-muted"></p>
+                      </div>
+                      <div className="col-6 mb-3">
+                        <h6></h6>
+                        <p className="text-mutedG"></p>
+                      </div>
+                    </div>
+                    <div className="d-flex justify-content-start">
+                      <a href="#!"><i className="fab fa-facebook-f fa-lg me-3"></i></a>
+                      <a href="#!"><i className="fab fa-twitter fa-lg me-3"></i></a>
+                      <a href="#!"><i className="fab fa-instagram fa-lg"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -58,8 +62,9 @@ const UserProfileCard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default UserProfileCard;
+export default UserProfileSection;
+
