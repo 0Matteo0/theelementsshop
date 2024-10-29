@@ -52,9 +52,6 @@ const ShopHomepage = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#!">
-                      Populares
-                    </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#!">
@@ -65,13 +62,18 @@ const ShopHomepage = () => {
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn btn-outline-dark" type="submit">
-                <i className="bi-cart-fill me-1"></i>
-                Carrito
-                <span className="badge bg-dark text-white ms-1 rounded-pill">
-                  0
-                </span>
-              </button>
+            <a href="/Perfil" className="btn btn-outline-dark">
+
+            Perfil
+          </a>
+          <br />
+
+                      <a href="/Cart" className="btn btn-outline-dark">
+            <i className="bi-cart-fill me-1"></i>
+            Carrito
+            <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
+          </a>
+
             </form>
           </div>
         </div>
@@ -134,7 +136,7 @@ const ShopHomepage = () => {
                     {/* Product actions */}
                     <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                       <div className="text-center">
-                        <a className="btn btn-outline-dark mt-auto" href="#">
+                        <a className="btn btn-outline-dark mt-auto" href="/Details12">
                           View options
                         </a>
                       </div>

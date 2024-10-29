@@ -14,7 +14,7 @@ const LoginForm = () => {
                 <div className="col-lg-6">
                   <div className="card-body p-md-5 mx-md-4">
                     <h4 className="mt-1 mb-5 pb-1 text-center">
-                      The Element Shop
+                      The Elements Shop
                     </h4>
 
                     <form>
@@ -44,30 +44,38 @@ const LoginForm = () => {
                       </div>
 
                       <div className="text-center pt-1 mb-5 pb-1 d-flex flex-column align-items-center">
-                        <button
-                          data-mdb-button-init
-                          data-mdb-ripple-init
-                          className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 center"
-                          type="button"
-                        >
-                          Inicio sesión
-                        </button>
-                        <a className="text-muted" href="#!">
+                    <a href="/Shophomepage">
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 center"
+                        type="button"
+                      >
+                        Iniciar sesión
+                      </button>
+                    </a>
+                  </div>
+                        <a className="text-muted" href="/password">
                           Recuperar contraseña?
                         </a>
-                      </div>
 
-                      <div className="d-flex align-items-center justify-content-center pb-4">
-                        <p className="mb-0 me-2">No tienes cuenta?</p>
-                        <button
-                          type="button"
-                          data-mdb-button-init
-                          data-mdb-ripple-init
-                          className="btn btn-outline-danger"
-                        >
-                          Crear una
-                        </button>
-                      </div>
+
+                        <div className="d-flex align-items-center justify-content-center pb-4">
+                          <
+                            p className="mb-0 me-2">No tienes cuenta?</p>
+                          <a href="/registro">
+                            <button
+                              type="button"
+                              data-mdb-button-init
+                              data-mdb-ripple-init
+                              className="btn btn-outline-danger"
+                            >
+                              Crear una
+                            </button>
+                          </a>
+                        </div>
+
+                      
                     </form>
                   </div>
                 </div>

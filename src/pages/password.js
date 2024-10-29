@@ -1,11 +1,11 @@
 import React from "react";
-import password from "../components/password";
+import PasswordResetCard from "../components/password"
 
-function Password() {
+function PasswordReset() {
     return (
         <div className="password">
-            <password/>
+            <PasswordResetCard/>
         </div>
     );
 }
-export default password;
+export default PasswordReset;

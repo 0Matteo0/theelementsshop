@@ -9,7 +9,8 @@ import ShopHomepage from '../components/ShopHomepage';
 import Registerjob from '../pages/Registerjob';
 import PaymentDetails from '../pages/Paymentdetails';
 import DetallesProd from '../pages/DetallesProducto.js'
-import perfil from '../components/perfil';
+import Perfil from '../components/perfil';
+import PasswordResetCard from '../components/password.jsx';
 
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
           <Route exact path='/registrotrabajador' element={<Registerjob/>}/>
           <Route exact path='/payment' element={<PaymentDetails/>}/>
           <Route exact path='/details12' element={<DetallesProd/>}/>
-          <Route exact path='/password' element={<password/>}/>
-          <Route exact path='/perfil' element={<perfil/>}/>
+          <Route exact path='/password' element={<PasswordResetCard/>}/>
+          <Route exact path='/perfil' element={<Perfil/>}/>
 
         </Routes>
       

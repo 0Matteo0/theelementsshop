@@ -276,28 +276,17 @@ function Cart() {
                     </li>
                   </ul>
 
-                  <button
-                    type="button"
-                    data-mdb-button-init
-                    data-mdb-ripple-init
-                    class="btn btn-primary btn-lg btn-block"
-                  >
-                    Ir A Pagar
-                  </button>
-                  <button
-                    type="button"
-                    data-mdb-button-init
-                    data-mdb-ripple-init
-                    class="btn btn-secondary btn-lg btn-block mx-3"
-                  >
-                    Ir A Pagar
-                  </button>
+                  <a href="#" className="btn btn-secondary btn-lg btn-block mx-3" data-mdb-button-init data-mdb-ripple-init>
+  Ir A Pagar
+</a>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        </div>
+     </section>
     </div>
   );
 }
